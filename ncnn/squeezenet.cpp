@@ -85,7 +85,7 @@ static int print_topk(const std::vector<float>& cls_scores, int topk, vector<int
 }
 
 
-static int load_labels(string path, vector<string>& labels)
+static void load_labels(string path, vector<string>& labels)
 {
 	FILE* fp = fopen(path.c_str(), "r");
 
